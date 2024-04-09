@@ -7,7 +7,7 @@ const visit = async (page) => {
     await page.fill('#twotabsearchtextbox', "oneplus");
     await page.click('#nav-search-submit-button');
     await page.waitForTimeout(3000);
-  //  await page.click("a[class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal']");
+    await page.click("a[class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal']");
     await page.waitForNetworkIdle(); // Wait every request has been answered as a normal user.
 };
 
